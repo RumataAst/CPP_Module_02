@@ -6,11 +6,11 @@
 #    By: akretov <akretov@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/02 16:15:06 by akretov           #+#    #+#              #
-#    Updated: 2025/01/19 18:17:45 by akretov          ###   ########.fr        #
+#    Updated: 2025/01/19 18:52:12 by akretov          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Orthodox_Canonical_Form
+NAME	= Int_Float
 SRCS    := main.cpp Fixed.cpp
 BIN		:= bin
 OBJS    := $(addprefix $(BIN)/, $(SRCS:.cpp=.o))
