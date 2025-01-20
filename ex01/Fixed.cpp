@@ -39,17 +39,17 @@ void Fixed::setRawBits( int const raw ) {
 }
 
 // Method to convert to float (for displaying the value)
-float Fixed::toFloat(void) const {
+float Fixed::toFloat( void ) const {
     return (float)_fixedPointValue / (1 << _bits);
 }
 
 // Method to convert to integer (for displaying the value as an integer)
-int Fixed::toInt(void) const {
+int Fixed::toInt( void ) const {
     return _fixedPointValue >> _bits;  // Right shift to remove the fractional part
 }
 
 // Definition of the non-member insertion operator (<<)
 std::ostream &operator<<(std::ostream &out, const Fixed &f) {
-    out << f.toFloat();  // Output the floating-point representation of the fixed-point value
+    out << f.toFloat();
     return out;
 }
