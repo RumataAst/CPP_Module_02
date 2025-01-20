@@ -6,12 +6,12 @@
 #    By: akretov <akretov@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/01/02 16:15:06 by akretov           #+#    #+#              #
-#    Updated: 2025/01/20 19:25:29 by akretov          ###   ########.fr        #
+#    Updated: 2025/01/20 19:58:32 by akretov          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Operators
-SRCS    := main.cpp Fixed.cpp
+NAME	= BSP
+SRCS    := main.cpp Fixed.cpp bsp.cpp  Point.cpp
 BIN		:= bin
 OBJS    := $(addprefix $(BIN)/, $(SRCS:.cpp=.o))
 INC		:= include

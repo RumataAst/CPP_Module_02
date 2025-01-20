@@ -43,9 +43,8 @@ float Fixed::toFloat( void ) const {
     return (float)_fixedPointValue / (1 << _bits);
 }
 
-// Method to convert to integer (for displaying the value as an integer)
 int Fixed::toInt( void ) const {
-    return _fixedPointValue >> _bits;  // Right shift to remove the fractional part
+    return _fixedPointValue >> _bits;
 }
 
 // Definition of the non-member insertion operator (<<)
