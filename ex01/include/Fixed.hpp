@@ -10,8 +10,8 @@ private:
 
 public:
     Fixed( void );
-    explicit Fixed( const int integer );
-    explicit Fixed( const float floatNumber );
+    Fixed( const int integer );
+    Fixed( const float floatNumber );
     Fixed( const Fixed &copy );
     Fixed &operator = ( const Fixed &source );
     ~Fixed( void );

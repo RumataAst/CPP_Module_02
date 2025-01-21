@@ -10,8 +10,8 @@ private:
 
 public:
     Fixed( void );
-    explicit Fixed( const int integer );
-    explicit Fixed( const float floatNumber );
+    Fixed( const int integer );
+    Fixed( const float floatNumber );
     Fixed( const Fixed &copy );
     Fixed &operator = ( const Fixed &source );
     ~Fixed( void );
@@ -42,7 +42,6 @@ public:
     static const Fixed &min ( const Fixed &fix_point_1, const Fixed &fix_point_2 );
     static Fixed &max ( Fixed &fix_point_1,Fixed &fix_point_2 );
     static const Fixed &max ( const Fixed &fix_point_1,const Fixed &fix_point_2 );
-
 };
 
 std::ostream &operator<<(std::ostream &out, const Fixed &fixed);
