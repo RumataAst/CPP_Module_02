@@ -118,15 +118,14 @@ Fixed   &Fixed::operator-- ( void ) {
 Fixed   Fixed::operator++ ( int ) {
         Fixed   temp = *this;
         _fixedPointValue+= 1;
-        return *this;
+        return temp;
 }
 
 Fixed   Fixed::operator-- ( int ) {
         Fixed   temp = *this;
         _fixedPointValue-= 1;
-        return *this;
+        return temp;
 }
-
 
 Fixed &Fixed::min ( Fixed &fix_point_1, Fixed &fix_point_2 ) {
     return (fix_point_1 <= fix_point_2) ? fix_point_1 : fix_point_2;

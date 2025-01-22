@@ -118,13 +118,13 @@ Fixed   &Fixed::operator-- ( void ) {
 Fixed   Fixed::operator++ ( int ) {
         Fixed   temp = *this;
         _fixedPointValue+= 1;
-        return *this;
+        return temp;
 }
 
 Fixed   Fixed::operator-- ( int ) {
         Fixed   temp = *this;
         _fixedPointValue-= 1;
-        return *this;
+        return temp;
 }
 
 
